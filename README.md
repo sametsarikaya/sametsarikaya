@@ -24,9 +24,11 @@ Software Engineering · İzmir University of Economics · 100% scholarship.
 
 Anyone can play. Click a highlighted square to make your move.
 
-**Turn: Black ⚫** | **Score: ⚫ 2 - 2 ⚪**
+**Turn: Black ⚫**
 
-`⚫██████████░░░░░░░░░░⚪`
+**2** &nbsp; `⚫████████████░░░░░░░░░░░░⚪` &nbsp; **2**
+
+<sub>⚫ Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; White ⚪</sub>
 
 <br>
 

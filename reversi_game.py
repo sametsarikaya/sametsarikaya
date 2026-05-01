@@ -202,24 +202,24 @@ def build_section(board: list, turn: str) -> str:
 
     b_cnt, w_cnt = score(board)
 
-    BAR_WIDTH = 20
+    BAR_WIDTH = 24
     total = b_cnt + w_cnt
     b_bar = round(b_cnt / total * BAR_WIDTH) if total else BAR_WIDTH // 2
     w_bar = BAR_WIDTH - b_bar
-    score_bar = f"`⚫{'█' * b_bar}{'░' * w_bar}⚪`"
+    score_bar = f"**{b_cnt}** &nbsp; `⚫{'█' * b_bar}{'░' * w_bar}⚪` &nbsp; **{w_cnt}**"
 
     if not vm:
         if b_cnt > w_cnt:
-            status_line = f"**Black wins! ⚫ {b_cnt} - {w_cnt} ⚪**, restarting..."
+            status_line = f"**Black wins!**, restarting..."
         elif w_cnt > b_cnt:
-            status_line = f"**White wins! ⚪ {w_cnt} - {b_cnt} ⚫**, restarting..."
+            status_line = f"**White wins!**, restarting..."
         else:
-            status_line = f"**Draw! ⚫ {b_cnt} - {w_cnt} ⚪**, restarting..."
+            status_line = f"**Draw!**, restarting..."
         board_md = render_board(board, [])
         moves_note = "_Restarting…_"
     else:
         color_name = "Black ⚫" if active_turn == 'B' else "White ⚪"
-        status_line = f"**Turn: {color_name}** | **Score: ⚫ {b_cnt} - {w_cnt} ⚪**"
+        status_line = f"**Turn: {color_name}**"
         board_md = render_board(board, vm)
         moves_note = "_Click a highlighted square to play._"
 
@@ -263,6 +263,8 @@ Anyone can play. Click a highlighted square to make your move.
 {status_line}
 
 {score_bar}
+
+<sub>⚫ Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; White ⚪</sub>
 
 <br>
 
