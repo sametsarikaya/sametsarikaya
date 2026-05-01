@@ -1,1 +1,3 @@
 .vscode/\n__pycache__/\n*.pyc
+__pycache__/chess.cpython-314.pyc
+.vscode/settings.json

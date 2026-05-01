@@ -160,5 +160,3 @@ Place your disc on a highlighted square. Any opponent discs sandwiched in a stra
 </picture>
 
 </div>
-
-<img src="https://capsule-render.vercel.app/api?type=blur&color=0:1a1b27,50:2d333b,100:1a1b27&height=100&section=footer" width="100%" />
