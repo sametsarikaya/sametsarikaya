@@ -148,6 +148,14 @@ Place your disc on a highlighted square. Any opponent discs sandwiched in a stra
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=sametsarikaya&theme=github-compact&hide_border=true&area=true&area_color=388bfd" width="100%" />
 
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/dist/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/dist/snake.svg" />
+  <img src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/dist/snake.svg" width="100%" />
+</picture>
+
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=blur&color=0:1a1b27,50:2d333b,100:1a1b27&height=100&section=footer" width="100%" />
