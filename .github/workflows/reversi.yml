@@ -9,6 +9,8 @@ jobs:
     name: Process reversi move
     runs-on: ubuntu-latest
     if: startsWith(github.event.issue.title, 'reversi|')
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     permissions:
       contents: write
