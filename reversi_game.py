@@ -154,11 +154,11 @@ def increment_leaderboard(username: str):
 def render_board(board: list, valid: list) -> str:
     valid_set = {idx(r, c) for r, c in valid}
     rows = [
-        "|   | A | B | C | D | E | F | G | H |",
-        "| - | - | - | - | - | - | - | - | - |",
+        "|   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |",
+        "| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |",
     ]
-    for row in range(8):
-        cells = [f"| {8 - row}"]
+    for row in range(7, -1, -1):
+        cells = [f"| **{8 - row}**"]
         for col in range(8):
             i = idx(row, col)
             if board[i] == 'B':
@@ -174,10 +174,27 @@ def render_board(board: list, valid: list) -> str:
     return "\n".join(rows)
 
 def render_moves_table(valid: list, turn: str) -> str:
-    color_name = "Siyah ⚫" if turn == 'B' else "Beyaz ⚪"
+    color_name = "Black \u26ab" if turn == 'B' else "White \u26aa"
     if not valid:
-        return f"**{color_name} için geçerli hamle yok — sıra atlandı.**"
-    return "🔵 _geçerli hamlelere tıkla_"
+        return f"**No valid moves for {color_name} \u2014 turn skipped automatically.**"
+
+    # Group by column letter for compact display (like the chess example)
+    lines = [
+        f"#### **{color_name}** to move \u2014 click a square below:",
+        "",
+        "| Square | Play |",
+        "| :----: | :--- |",
+    ]
+    for row, col in sorted(valid, key=lambda rc: (rc[1], rc[0])):
+        sq = square_to_str(row, col).upper()
+        uci = square_to_str(row, col)
+        url = (
+            f"{REPO_URL}/issues/new"
+            f"?title=reversi%7Cmove%7C{uci}%7C1"
+            f"&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else."
+        )
+        lines.append(f"| **{sq}** | [\u25b6 Play {sq}]({url}) |")
+    return "\n".join(lines)
 
 
 # ── README section builder ────────────────────────────────────────────────────

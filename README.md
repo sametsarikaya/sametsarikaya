@@ -24,24 +24,31 @@ Software Engineering · İzmir University of Economics · 100% scholarship.
 
 > Anyone can play — click a 🔵 square to make your move! 👇
 
-**Turn: White ⚪** &nbsp;|&nbsp; **Score: ⚫ 4 — 1 ⚪**
+**Turn: Black ⚫** &nbsp;|&nbsp; **Score: ⚫ 2 — 2 ⚪**
 
-`⚫████████████████░░░░⚪`
+`⚫██████████░░░░░░░░░░⚪`
 
 <br>
 
-|   | A | B | C | D | E | F | G | H |
-| - | - | - | - | - | - | - | - | - |
-| 8 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
-| 7 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
-| 6 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
-| 5 | 🟩 | 🟩 | 🔵 | ⚫ | ⚪ | 🟩 | 🟩 | 🟩 | 
-| 4 | 🟩 | 🟩 | ⚫ | ⚫ | ⚫ | 🟩 | 🟩 | 🟩 | 
-| 3 | 🟩 | 🟩 | 🔵 | 🟩 | 🔵 | 🟩 | 🟩 | 🟩 | 
-| 2 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
-| 1 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
+|   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| **8** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| **7** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| **6** | 🟩 | 🟩 | 🟩 | 🟩 | 🔵 | 🟩 | 🟩 | 🟩 |
+| **5** | 🟩 | 🟩 | 🟩 | ⚫ | ⚪ | 🔵 | 🟩 | 🟩 |
+| **4** | 🟩 | 🟩 | 🔵 | ⚪ | ⚫ | 🟩 | 🟩 | 🟩 |
+| **3** | 🟩 | 🟩 | 🟩 | 🔵 | 🟩 | 🟩 | 🟩 | 🟩 |
+| **2** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| **1** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
 
-🔵 _geçerli hamlelere tıkla_
+#### **Black ⚫** to move — click a square below:
+
+| Square | Play |
+| :----: | :--- |
+| **C4** | [▶ Play C4](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cc4%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
+| **D3** | [▶ Play D3](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cd3%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
+| **E6** | [▶ Play E6](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Ce6%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
+| **F5** | [▶ Play F5](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cf5%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
 
 <br>
 
@@ -100,18 +107,14 @@ The two ⚪ discs are sandwiched → flipped to ⚫!
 
 **🕐 Recent Moves**
 
-| Move | Who |
-| :---- | :-- |
-| ⚫ C4 | [@sametsarikaya](https://github.com/sametsarikaya) |
+_No moves yet — be the first!_
 
 </td>
 <td valign="top" width="50%">
 
 **🏆 Leaderboard**
 
-| Moves | Who |
-| :---: | :-- |
-| 1 | [@sametsarikaya](https://github.com/sametsarikaya) |
+_Nobody yet._
 
 </td>
 </tr>
