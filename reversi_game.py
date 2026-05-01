@@ -155,10 +155,12 @@ def increment_leaderboard(username: str):
 
 # ── Rendering ─────────────────────────────────────────────────────────────────
 
+IMG_W = 90  # rendered width in pixels
+
 def render_board(board: list, valid: list) -> str:
     valid_set = {idx(r, c) for r, c in valid}
     rows = [
-        "|   | A | B | C | D | E | F | G | H |",
+        f"|   | A | B | C | D | E | F | G | H |",
         "| - | - | - | - | - | - | - | - | - |",
     ]
     for row in range(8):
@@ -166,9 +168,9 @@ def render_board(board: list, valid: list) -> str:
         for col in range(8):
             i = idx(row, col)
             if board[i] == 'B':
-                cells.append(IMG_BLACK)
+                cells.append(f'<img width="{IMG_W}" src="{RAW_URL}/black.png">')
             elif board[i] == 'W':
-                cells.append(IMG_WHITE)
+                cells.append(f'<img width="{IMG_W}" src="{RAW_URL}/white.png">')
             elif i in valid_set:
                 uci = square_to_str(row, col)
                 url = (
@@ -176,9 +178,9 @@ def render_board(board: list, valid: list) -> str:
                     f"?title=reversi%7Cmove%7C{uci}%7C1"
                     f"&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else."
                 )
-                cells.append(f"[![]({RAW_URL}/valid.png)]({url})")
+                cells.append(f'<a href="{url}"><img width="{IMG_W}" src="{RAW_URL}/valid.png"></a>')
             else:
-                cells.append(IMG_EMPTY)
+                cells.append(f'<img width="{IMG_W}" src="{RAW_URL}/empty.png">')
         cells.append("")
         rows.append(" | ".join(cells))
     return "\n".join(rows)
