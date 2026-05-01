@@ -23,9 +23,10 @@ README       = "README.md"
 REPO_URL = "https://github.com/sametsarikaya/sametsarikaya"
 RAW_URL  = "https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images"
 
-IMG_EMPTY = "![](" + RAW_URL + "/empty.png)"
-IMG_BLACK = "![](" + RAW_URL + "/black.png)"
-IMG_WHITE = "![](" + RAW_URL + "/white.png)"
+IMG_E = RAW_URL + "/e.png"
+IMG_B = RAW_URL + "/b.png"
+IMG_W = RAW_URL + "/w.png"
+IMG_V = RAW_URL + "/v.png"
 
 # legacy text fallbacks (not used in board, kept for status)
 BLACK = "⚫"
@@ -155,7 +156,7 @@ def increment_leaderboard(username: str):
 
 # ── Rendering ─────────────────────────────────────────────────────────────────
 
-IMG_W = 90  # rendered width in pixels
+CELL_PX = 90  # rendered width in pixels
 
 def render_board(board: list, valid: list) -> str:
     valid_set = {idx(r, c) for r, c in valid}
@@ -168,9 +169,9 @@ def render_board(board: list, valid: list) -> str:
         for col in range(8):
             i = idx(row, col)
             if board[i] == 'B':
-                cells.append(f'<img width="{IMG_W}" src="{RAW_URL}/black.png">')
+                cells.append(f'<img width="{CELL_PX}" src="{IMG_B}">')
             elif board[i] == 'W':
-                cells.append(f'<img width="{IMG_W}" src="{RAW_URL}/white.png">')
+                cells.append(f'<img width="{CELL_PX}" src="{IMG_W}">')
             elif i in valid_set:
                 uci = square_to_str(row, col)
                 url = (
@@ -178,9 +179,9 @@ def render_board(board: list, valid: list) -> str:
                     f"?title=reversi%7Cmove%7C{uci}%7C1"
                     f"&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else."
                 )
-                cells.append(f'<a href="{url}"><img width="{IMG_W}" src="{RAW_URL}/valid.png"></a>')
+                cells.append(f'<a href="{url}"><img width="{CELL_PX}" src="{IMG_V}"></a>')
             else:
-                cells.append(f'<img width="{IMG_W}" src="{RAW_URL}/empty.png">')
+                cells.append(f'<img width="{CELL_PX}" src="{IMG_E}">')
         cells.append("")
         rows.append(" | ".join(cells))
     return "\n".join(rows)
