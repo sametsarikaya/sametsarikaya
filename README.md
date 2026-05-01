@@ -24,31 +24,30 @@ Software Engineering · İzmir University of Economics · 100% scholarship.
 
 > Anyone can play — click a 🔵 square to make your move! 👇
 
-**Turn: Black ⚫** &nbsp;|&nbsp; **Score: ⚫ 2 — 2 ⚪**
+**Turn: White ⚪** &nbsp;|&nbsp; **Score: ⚫ 4 — 1 ⚪**
 
-`⚫██████████░░░░░░░░░░⚪`
+`⚫████████████████░░░░⚪`
 
 <br>
 
 |   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| **8** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
-| **7** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
-| **6** | 🟩 | 🟩 | 🟩 | 🟩 | 🔵 | 🟩 | 🟩 | 🟩 |
-| **5** | 🟩 | 🟩 | 🟩 | ⚫ | ⚪ | 🔵 | 🟩 | 🟩 |
-| **4** | 🟩 | 🟩 | 🔵 | ⚪ | ⚫ | 🟩 | 🟩 | 🟩 |
-| **3** | 🟩 | 🟩 | 🟩 | 🔵 | 🟩 | 🟩 | 🟩 | 🟩 |
-| **2** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
-| **1** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| **1** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
+| **2** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
+| **3** | 🟩 | 🟩 | 🔵 | 🟩 | 🔵 | 🟩 | 🟩 | 🟩 | 
+| **4** | 🟩 | 🟩 | ⚫ | ⚫ | ⚫ | 🟩 | 🟩 | 🟩 | 
+| **5** | 🟩 | 🟩 | 🔵 | ⚫ | ⚪ | 🟩 | 🟩 | 🟩 | 
+| **6** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
+| **7** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
+| **8** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
 
-#### **Black ⚫** to move — click a square below:
+#### **White ⚪** to move — click a square below:
 
 | Square | Play |
 | :----: | :--- |
-| **C4** | [▶ Play C4](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cc4%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
-| **D3** | [▶ Play D3](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cd3%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
-| **E6** | [▶ Play E6](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Ce6%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
-| **F5** | [▶ Play F5](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cf5%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
+| **C5** | [▶ Play C5](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cc5%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
+| **C3** | [▶ Play C3](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cc3%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
+| **E3** | [▶ Play E3](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Ce3%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
 
 <br>
 
@@ -107,14 +106,18 @@ The two ⚪ discs are sandwiched → flipped to ⚫!
 
 **🕐 Recent Moves**
 
-_No moves yet — be the first!_
+| Move | Who |
+| :---- | :-- |
+| ⚫ C4 | [@sametsarikaya](https://github.com/sametsarikaya) |
 
 </td>
 <td valign="top" width="50%">
 
 **🏆 Leaderboard**
 
-_Nobody yet._
+| Moves | Who |
+| :---: | :-- |
+| 1 | [@sametsarikaya](https://github.com/sametsarikaya) |
 
 </td>
 </tr>
