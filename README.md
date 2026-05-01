@@ -20,79 +20,59 @@ Software Engineering · İzmir University of Economics · 100% scholarship.
 
 <div align="center">
 
-## 🎮 Community Reversi Tournament
+## Open Reversi
 
-> Anyone can play — click a 🔵 square to make your move! 👇
+Anyone can play. Click a highlighted square to make your move.
 
-**Turn: White ⚪** &nbsp;|&nbsp; **Score: ⚫ 5 — 2 ⚪**
+**Turn: Black ⚫** | **Score: ⚫ 2 - 2 ⚪**
 
-`⚫██████████████░░░░░░⚪`
+`⚫██████████░░░░░░░░░░⚪`
 
 <br>
 
-|   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| **1** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
-| **2** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
-| **3** | 🟩 | 🟩 | 🔵 | 🟩 | ⚪ | ⚫ | 🔵 | 🟩 | 
-| **4** | 🟩 | 🟩 | ⚫ | ⚫ | ⚫ | 🟩 | 🟩 | 🟩 | 
-| **5** | 🟩 | 🟩 | 🔵 | ⚫ | ⚪ | 🟩 | 🟩 | 🟩 | 
-| **6** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
-| **7** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
-| **8** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 
+|   | A | B | C | D | E | F | G | H |
+| - | - | - | - | - | - | - | - | - |
+| 8 | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | 
+| 7 | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | 
+| 6 | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | [![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/valid.png)](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Ce6%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | 
+| 5 | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/black.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/white.png) | [![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/valid.png)](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cf5%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | 
+| 4 | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | [![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/valid.png)](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cc4%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/white.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/black.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | 
+| 3 | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | [![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/valid.png)](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cd3%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | 
+| 2 | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | 
+| 1 | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | ![](https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png) | 
 
-#### **White ⚪** to move — click a square below:
-
-| Square | Play |
-| :----: | :--- |
-| **C5** | [▶ Play C5](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cc5%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
-| **C3** | [▶ Play C3](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cc3%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
-| **G3** | [▶ Play G3](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cg3%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) |
+_Click a highlighted square to play._
 
 <br>
 
 <details>
-<summary><b>📖 How to play Reversi — click to expand</b></summary>
+<summary><b>How to play</b></summary>
 <br>
 
-**Making a move:**
-
-**1.** Click a 🔵 highlighted square on the board above<br>
-**2.** A GitHub Issue opens — press **"Submit new issue"**<br>
-**3.** The board auto-updates! ♻️
+**1.** Click a highlighted square on the board<br>
+**2.** A GitHub Issue opens, press **"Submit new issue"**<br>
+**3.** The board updates automatically.
 
 ---
 
-**Legend:**
+**Legend**
 
 | | |
 |:-:|:--|
-| ⚫ | Black disc — plays first |
+| ⚫ | Black disc (plays first) |
 | ⚪ | White disc |
-| 🔵 | Valid move — click to play here |
-| 🟩 | Empty square |
+| (blue dot) | Valid move, click to play |
+| (green) | Empty square |
 
-**Goal:** Have the most discs on the board when the game ends!
+**Goal:** Have the most discs on the board when the game ends.
 
 **How capturing works:**
 
-Place your disc on a 🔵 square. Any opponent discs **sandwiched in a straight line** between your new disc and one of your existing discs — in any of the 8 directions (↑ ↓ ← → ↗ ↙ ↘ ↖) — are **flipped** to your color.
+Place your disc on a highlighted square. Any opponent discs sandwiched in a straight line between your new disc and one of your existing discs, in any of the 8 directions (↑ ↓ ← → ↗ ↙ ↘ ↖), are flipped to your color.
 
-<pre>
-Example — Black plays C4:
-
-  Before        After
-🟩 ⚫ 🟩      🟩 ⚫ 🟩
-⚪ ⚪ 🔵  →  ⚫ ⚫ ⚫
-🟩 🟩 🟩      🟩 🟩 🟩
-
-The two ⚪ discs are sandwiched → flipped to ⚫!
-</pre>
-
-- You **must** flip at least one disc — only 🔵 squares are playable
-- If you have **no valid moves**, your turn is skipped automatically
-- When **neither player** can move, the game ends and **auto-restarts** 🔄
-- The player with the **most discs wins** 🏆
+- You must flip at least one disc. Only highlighted squares are playable.
+- If you have no valid moves, your turn is skipped automatically.
+- When neither player can move, the game ends and restarts.
 
 </details>
 
@@ -104,7 +84,7 @@ The two ⚪ discs are sandwiched → flipped to ⚫!
 <tr>
 <td valign="top" width="50%">
 
-**🕐 Recent Moves**
+**Recent Moves**
 
 | Move | Who |
 | :---- | :-- |
@@ -115,7 +95,7 @@ The two ⚪ discs are sandwiched → flipped to ⚫!
 </td>
 <td valign="top" width="50%">
 
-**🏆 Leaderboard**
+**Leaderboard**
 
 | Moves | Who |
 | :---: | :-- |

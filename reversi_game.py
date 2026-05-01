@@ -21,11 +21,15 @@ LEADER_FILE  = "reversi_games/leaderboard.txt"
 README       = "README.md"
 
 REPO_URL = "https://github.com/sametsarikaya/sametsarikaya"
+RAW_URL  = "https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images"
 
-EMPTY = "🟩"
+IMG_EMPTY = "![](" + RAW_URL + "/empty.png)"
+IMG_BLACK = "![](" + RAW_URL + "/black.png)"
+IMG_WHITE = "![](" + RAW_URL + "/white.png)"
+
+# legacy text fallbacks (not used in board, kept for status)
 BLACK = "⚫"
 WHITE = "⚪"
-VALID = "🔵"
 
 DIRS = [(-1,-1),(-1,0),(-1,1),(0,-1),(0,1),(1,-1),(1,0),(1,1)]
 
@@ -154,47 +158,30 @@ def increment_leaderboard(username: str):
 def render_board(board: list, valid: list) -> str:
     valid_set = {idx(r, c) for r, c in valid}
     rows = [
-        "|   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |",
-        "| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |",
+        "|   | A | B | C | D | E | F | G | H |",
+        "| - | - | - | - | - | - | - | - | - |",
     ]
-    for row in range(7, -1, -1):
-        cells = [f"| **{8 - row}**"]
+    for row in range(8):
+        cells = [f"| {8 - row}"]
         for col in range(8):
             i = idx(row, col)
             if board[i] == 'B':
-                cells.append(BLACK)
+                cells.append(IMG_BLACK)
             elif board[i] == 'W':
-                cells.append(WHITE)
+                cells.append(IMG_WHITE)
             elif i in valid_set:
-                cells.append(VALID)
+                uci = square_to_str(row, col)
+                url = (
+                    f"{REPO_URL}/issues/new"
+                    f"?title=reversi%7Cmove%7C{uci}%7C1"
+                    f"&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else."
+                )
+                cells.append(f"[![]({RAW_URL}/valid.png)]({url})")
             else:
-                cells.append(EMPTY)
+                cells.append(IMG_EMPTY)
         cells.append("")
         rows.append(" | ".join(cells))
     return "\n".join(rows)
-
-def render_moves_table(valid: list, turn: str) -> str:
-    color_name = "Black \u26ab" if turn == 'B' else "White \u26aa"
-    if not valid:
-        return f"**No valid moves for {color_name} \u2014 turn skipped automatically.**"
-
-    # Group by column letter for compact display (like the chess example)
-    lines = [
-        f"#### **{color_name}** to move \u2014 click a square below:",
-        "",
-        "| Square | Play |",
-        "| :----: | :--- |",
-    ]
-    for row, col in sorted(valid, key=lambda rc: (rc[1], rc[0])):
-        sq = square_to_str(row, col).upper()
-        uci = square_to_str(row, col)
-        url = (
-            f"{REPO_URL}/issues/new"
-            f"?title=reversi%7Cmove%7C{uci}%7C1"
-            f"&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else."
-        )
-        lines.append(f"| **{sq}** | [\u25b6 Play {sq}]({url}) |")
-    return "\n".join(lines)
 
 
 # ── README section builder ────────────────────────────────────────────────────
@@ -220,18 +207,18 @@ def build_section(board: list, turn: str) -> str:
 
     if not vm:
         if b_cnt > w_cnt:
-            status_line = f"🏆 **Black Wins!** ⚫ {b_cnt} — {w_cnt} ⚪ — New game starting…"
+            status_line = f"**Black wins! ⚫ {b_cnt} - {w_cnt} ⚪**, restarting..."
         elif w_cnt > b_cnt:
-            status_line = f"🏆 **White Wins!** ⚪ {w_cnt} — {b_cnt} ⚫ — New game starting…"
+            status_line = f"**White wins! ⚪ {w_cnt} - {b_cnt} ⚫**, restarting..."
         else:
-            status_line = f"🤝 **Draw!** ⚫ {b_cnt} — {w_cnt} ⚪ — New game starting…"
+            status_line = f"**Draw! ⚫ {b_cnt} - {w_cnt} ⚪**, restarting..."
         board_md = render_board(board, [])
-        moves_note = "🔄 _Auto-restarting…_"
+        moves_note = "_Restarting…_"
     else:
         color_name = "Black ⚫" if active_turn == 'B' else "White ⚪"
-        status_line = f"**Turn: {color_name}** &nbsp;|&nbsp; **Score: ⚫ {b_cnt} — {w_cnt} ⚪**"
+        status_line = f"**Turn: {color_name}** | **Score: ⚫ {b_cnt} - {w_cnt} ⚪**"
         board_md = render_board(board, vm)
-        moves_note = render_moves_table(vm, active_turn)
+        moves_note = "_Click a highlighted square to play._"
 
     # Recent moves
     try:
@@ -243,7 +230,7 @@ def build_section(board: list, turn: str) -> str:
     if recent_raw:
         recent_md = "| Move | Who |\n| :---- | :-- |\n" + recent_raw
     else:
-        recent_md = "_No moves yet — be the first!_"
+        recent_md = "_No moves yet. Be the first!_"
 
     # Leaderboard
     try:
@@ -266,9 +253,9 @@ def build_section(board: list, turn: str) -> str:
 
 <div align="center">
 
-## 🎮 Community Reversi Tournament
+## Open Reversi
 
-> Anyone can play — click a 🔵 square to make your move! 👇
+Anyone can play. Click a highlighted square to make your move.
 
 {status_line}
 
@@ -283,47 +270,33 @@ def build_section(board: list, turn: str) -> str:
 <br>
 
 <details>
-<summary><b>📖 How to play Reversi — click to expand</b></summary>
+<summary><b>How to play</b></summary>
 <br>
 
-**Making a move:**
-
-**1.** Click a 🔵 highlighted square on the board above<br>
-**2.** A GitHub Issue opens — press **"Submit new issue"**<br>
-**3.** The board auto-updates! ♻️
+**1.** Click a highlighted square on the board<br>
+**2.** A GitHub Issue opens, press **"Submit new issue"**<br>
+**3.** The board updates automatically.
 
 ---
 
-**Legend:**
+**Legend**
 
 | | |
 |:-:|:--|
-| ⚫ | Black disc — plays first |
+| ⚫ | Black disc (plays first) |
 | ⚪ | White disc |
-| 🔵 | Valid move — click to play here |
-| 🟩 | Empty square |
+| (blue dot) | Valid move, click to play |
+| (green) | Empty square |
 
-**Goal:** Have the most discs on the board when the game ends!
+**Goal:** Have the most discs on the board when the game ends.
 
 **How capturing works:**
 
-Place your disc on a 🔵 square. Any opponent discs **sandwiched in a straight line** between your new disc and one of your existing discs — in any of the 8 directions (↑ ↓ ← → ↗ ↙ ↘ ↖) — are **flipped** to your color.
+Place your disc on a highlighted square. Any opponent discs sandwiched in a straight line between your new disc and one of your existing discs, in any of the 8 directions (↑ ↓ ← → ↗ ↙ ↘ ↖), are flipped to your color.
 
-<pre>
-Example — Black plays C4:
-
-  Before        After
-🟩 ⚫ 🟩      🟩 ⚫ 🟩
-⚪ ⚪ 🔵  →  ⚫ ⚫ ⚫
-🟩 🟩 🟩      🟩 🟩 🟩
-
-The two ⚪ discs are sandwiched → flipped to ⚫!
-</pre>
-
-- You **must** flip at least one disc — only 🔵 squares are playable
-- If you have **no valid moves**, your turn is skipped automatically
-- When **neither player** can move, the game ends and **auto-restarts** 🔄
-- The player with the **most discs wins** 🏆
+- You must flip at least one disc. Only highlighted squares are playable.
+- If you have no valid moves, your turn is skipped automatically.
+- When neither player can move, the game ends and restarts.
 
 </details>
 
@@ -335,14 +308,14 @@ The two ⚪ discs are sandwiched → flipped to ⚫!
 <tr>
 <td valign="top" width="50%">
 
-**🕐 Recent Moves**
+**Recent Moves**
 
 {recent_md}
 
 </td>
 <td valign="top" width="50%">
 
-**🏆 Leaderboard**
+**Leaderboard**
 
 {lb_md}
 
