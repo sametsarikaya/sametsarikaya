@@ -31,7 +31,7 @@ Anyone can play. Click a highlighted square to make your move.
 <br>
 
 |   | A | B | C | D | E | F | G | H |
-| - | - | - | - | - | - | - | - | - |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 8 | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | 
 | 7 | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | 
 | 6 | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <a href="https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Ce6%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else."><img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/valid.png"></a> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | <img width="90" src="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/reversi_images/empty.png"> | 
@@ -86,20 +86,14 @@ Place your disc on a highlighted square. Any opponent discs sandwiched in a stra
 
 **Recent Moves**
 
-| Move | Who |
-| :---- | :-- |
-| ⚫ F3 | [@sametsarikaya](https://github.com/sametsarikaya) |
-| ⚪ E3 | [@sametsarikaya](https://github.com/sametsarikaya) |
-| ⚫ C4 | [@sametsarikaya](https://github.com/sametsarikaya) |
+_No moves yet. Be the first!_
 
 </td>
 <td valign="top" width="50%">
 
 **Leaderboard**
 
-| Moves | Who |
-| :---: | :-- |
-| 3 | [@sametsarikaya](https://github.com/sametsarikaya) |
+_Nobody yet._
 
 </td>
 </tr>

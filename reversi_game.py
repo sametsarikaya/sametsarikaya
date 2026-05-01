@@ -160,8 +160,8 @@ IMG_W = 90  # rendered width in pixels
 def render_board(board: list, valid: list) -> str:
     valid_set = {idx(r, c) for r, c in valid}
     rows = [
-        f"|   | A | B | C | D | E | F | G | H |",
-        "| - | - | - | - | - | - | - | - | - |",
+        "|   | A | B | C | D | E | F | G | H |",
+        "| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |",
     ]
     for row in range(8):
         cells = [f"| {8 - row}"]
