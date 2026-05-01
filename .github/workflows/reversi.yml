@@ -1,0 +1,60 @@
+name: Reversi Game
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  reversi:
+    name: Process reversi move
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'reversi|')
+
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Process move
+        env:
+          GITHUB_ACTOR: ${{ github.event.issue.user.login }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: python reversi_game.py
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md reversi_games/
+          git diff --staged --quiet || git commit -m "reversi: ${{ github.event.issue.user.login }} made a move 🔵"
+          git push
+
+      - name: Comment and close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                "🔵 Hamleniz işlendi! README güncellendi.",
+                "",
+                `[👉 Tahtaya göz at](https://github.com/${context.repo.owner}/${context.repo.repo}#-topluluk-reversi-othello-turnuvası)`
+              ].join("\n")
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: "closed",
+              labels: ["reversi"]
+            });

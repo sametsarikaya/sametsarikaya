@@ -16,6 +16,107 @@ Software Engineering · İzmir University of Economics · 100% scholarship.
 
 ---
 
+<!-- REVERSI_START -->
+
+<div align="center">
+
+## 🎮 Community Reversi Tournament
+
+> Anyone can play — click a 🔵 square to make your move! 👇
+
+**Turn: Black ⚫** &nbsp;|&nbsp; **Score: ⚫ 2 — 2 ⚪**
+
+`⚫██████████░░░░░░░░░░⚪`
+
+<br>
+
+|   | **A** | **B** | **C** | **D** | **E** | **F** | **G** | **H** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| **8** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| **7** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| **6** | 🟩 | 🟩 | 🟩 | 🟩 | [🔵](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Ce6%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) | 🟩 | 🟩 | 🟩 |
+| **5** | 🟩 | 🟩 | 🟩 | ⚫ | ⚪ | [🔵](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cf5%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) | 🟩 | 🟩 |
+| **4** | 🟩 | 🟩 | [🔵](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cc4%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) | ⚪ | ⚫ | 🟩 | 🟩 | 🟩 |
+| **3** | 🟩 | 🟩 | 🟩 | [🔵](https://github.com/sametsarikaya/sametsarikaya/issues/new?title=reversi%7Cmove%7Cd3%7C1&body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.) | 🟩 | 🟩 | 🟩 | 🟩 |
+| **2** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+| **1** | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 | 🟩 |
+
+🔵 _click a highlighted square to play_
+
+<br>
+
+<details>
+<summary><b>📖 How to play Reversi — click to expand</b></summary>
+<br>
+
+**Making a move:**
+
+**1.** Click a 🔵 highlighted square on the board above<br>
+**2.** A GitHub Issue opens — press **"Submit new issue"**<br>
+**3.** The board auto-updates! ♻️
+
+---
+
+**Legend:**
+
+| | |
+|:-:|:--|
+| ⚫ | Black disc — plays first |
+| ⚪ | White disc |
+| 🔵 | Valid move — click to play here |
+| 🟩 | Empty square |
+
+**Goal:** Have the most discs on the board when the game ends!
+
+**How capturing works:**
+
+Place your disc on a 🔵 square. Any opponent discs **sandwiched in a straight line** between your new disc and one of your existing discs — in any of the 8 directions (↑ ↓ ← → ↗ ↙ ↘ ↖) — are **flipped** to your color.
+
+<pre>
+Example — Black plays C4:
+
+  Before        After
+🟩 ⚫ 🟩      🟩 ⚫ 🟩
+⚪ ⚪ 🔵  →  ⚫ ⚫ ⚫
+🟩 🟩 🟩      🟩 🟩 🟩
+
+The two ⚪ discs are sandwiched → flipped to ⚫!
+</pre>
+
+- You **must** flip at least one disc — only 🔵 squares are playable
+- If you have **no valid moves**, your turn is skipped automatically
+- When **neither player** can move, the game ends and **auto-restarts** 🔄
+- The player with the **most discs wins** 🏆
+
+</details>
+
+</div>
+
+<br>
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**🕐 Recent Moves**
+
+_No moves yet — be the first!_
+
+</td>
+<td valign="top" width="50%">
+
+**🏆 Leaderboard**
+
+_Nobody yet._
+
+</td>
+</tr>
+</table>
+
+<!-- REVERSI_END -->
+
+---
+
 <br>
 
 <table>
@@ -30,10 +131,6 @@ Software Engineering · İzmir University of Economics · 100% scholarship.
   <tr>
     <td><b>Mobile</b></td>
     <td>Flutter · Dart</td>
-  </tr>
-  <tr>
-    <td><b>Tools</b></td>
-    <td>Git · VS Code · JetBrains IDEs · OpenCV</td>
   </tr>
 </table>
 
