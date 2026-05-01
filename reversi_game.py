@@ -429,8 +429,10 @@ def main() -> bool:
 
     vm = valid_moves(board, turn)
     if (row, col) not in vm:
-        print(f"Illegal move {sq_str.upper()} for {turn}. Legal: {[square_to_str(r,c) for r,c in vm]}")
-        return False
+        # Stale link — someone else already moved. Refresh README with current state.
+        print(f"Stale move {sq_str.upper()} — board already changed. Refreshing README.")
+        update_readme(board, turn)
+        return True
 
     apply_move(board, row, col, turn)
     b_cnt, w_cnt = score(board)
@@ -468,5 +470,4 @@ def main() -> bool:
 
 
 if __name__ == "__main__":
-    main()
-    raise SystemExit(0)
+    raise SystemExit(0 if main() else 1)
