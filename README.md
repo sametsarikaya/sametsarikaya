@@ -12,6 +12,10 @@ Software Engineering · İzmir University of Economics · 100% scholarship.
 
 <br>
 
+<img src="https://komarev.com/ghpvc/?username=imDucktor&color=blue&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+
+<br>
+
 </div>
 
 ---
