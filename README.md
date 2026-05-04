@@ -85,7 +85,7 @@ Place your disc on a highlighted square. Any opponent discs sandwiched in a stra
 </div>
 
 <br>
-
+<div align="center">
 <table>
 <tr>
 <td valign="top" width="50%">
@@ -114,13 +114,12 @@ Place your disc on a highlighted square. Any opponent discs sandwiched in a stra
 </td>
 </tr>
 </table>
-
+</div>
 <!-- REVERSI_END -->
 
 ---
 
-<br>
-
+<div align="center">
 <table>
   <tr>
     <td><b>Languages</b></td>
@@ -135,8 +134,7 @@ Place your disc on a highlighted square. Any opponent discs sandwiched in a stra
     <td>Flutter · Dart</td>
   </tr>
 </table>
-
-<br>
+</div>
 
 ---
 
@@ -144,17 +142,14 @@ Place your disc on a highlighted square. Any opponent discs sandwiched in a stra
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=sametsarikaya&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" height="155" />&nbsp;&nbsp;<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sametsarikaya&layout=compact&theme=github_dark&hide_border=true&langs_count=6" height="155" />
+<!-- <img src="https://github-readme-stats.vercel.app/api?username=sametsarikaya&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" height="155" />&nbsp;&nbsp;<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sametsarikaya&layout=compact&theme=github_dark&hide_border=true&langs_count=6" height="155" /> -->
 
-<br><br>
+<br>
 
 <img src="https://github-readme-streak-stats.herokuapp.com?user=sametsarikaya&theme=github-dark&hide_border=true&date_format=j%20M%5B%20Y%5D" height="155" />
 
-<br><br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sametsarikaya&theme=github-compact&hide_border=true&area=true&area_color=388bfd" width="100%" />
-
 <br>
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sametsarikaya/sametsarikaya/master/dist/snake-dark.svg" />
